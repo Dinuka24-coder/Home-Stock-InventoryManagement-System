@@ -1,0 +1,5 @@
+/* Content Area */
+.content {
+  padding: 20px;
+  min-height: calc(100vh - 150px); /* Adjust based on header and nav height */
+}

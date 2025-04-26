@@ -1,0 +1,123 @@
+/* ../styles/verify-otp.css */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Adding a sleek font */
+    background-image: url('https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.verify-otp-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow effect */
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+.verify-otp-container h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #ffffff; /* Soft coral for the header */
+    font-weight: 600;
+    text-transform: uppercase; /* Adds emphasis on the header */
+}
+
+.verify-otp-container p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #f0f0f0; /* Light gray for description text */
+}
+
+.verify-otp-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.verify-otp-container input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #333; /* Dark text for easy reading */
+    transition: border-color 0.3s ease-in-out;
+}
+
+.verify-otp-container input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); /* Adds a glowing effect when focused */
+}
+
+.verify-otp-container button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient button */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.verify-otp-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Subtle zoom effect when hovering */
+}
+
+.verify-otp-container button:active {
+    background-color: #003f7f;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #f0f0f0; /* Light gray for message text */
+    text-align: center;
+}
+
+.message.success {
+    color: #28a745; /* Green for success messages */
+    font-weight: bold;
+}
+
+.message.error {
+    color: #dc3545; /* Red for error messages */
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .verify-otp-container {
+        padding: 30px;
+        max-width: 90%; /* Makes the form responsive on smaller screens */
+    }
+
+    .verify-otp-container h2 {
+        font-size: 24px;
+    }
+
+    .verify-otp-container input, .verify-otp-container button {
+        font-size: 16px;
+    }
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,113 @@
+/* Apply styles only when inside .register-page */
+.register-page {
+  background-image: url('https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Register Page Icon */
+.register-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+
+/* Centered register container */
+.register-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Register title */
+.register-container h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.register-container input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.register-container input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Register button */
+.register-container button {
+  width: 50%;
+  padding: 12px;
+  background: linear-gradient(135deg, #007bff, #0056d2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.register-container button:hover {
+  background: linear-gradient(135deg, #0056d2, #0041a3);
+  transform: scale(1.05);
+}
+
+/* Button click effect */
+.register-container button:active {
+  transform: scale(0.98);
+}
+
+/* Already have an account? */
+.register-container p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.register-container a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-container a:hover {
+  text-decoration: underline;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

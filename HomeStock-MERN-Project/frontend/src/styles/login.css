@@ -1,0 +1,119 @@
+/* Login Page Specific Styles */
+body.login-page {
+  background-image: url('https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Login container with fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-page .login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+/* Adding hover effect */
+.login-page .login-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Input fields with glowing effect */
+.login-page .login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+/* Focus effect for inputs */
+.login-page .login-container input:focus {
+  border-color: #0072ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 114, 255, 0.5);
+}
+
+/* Stylish button */
+.login-page .login-container button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.login-page .login-container button:hover {
+  background: linear-gradient(135deg, #005ecb, #0094d9);
+  transform: translateY(-3px);
+}
+
+/* Button active effect */
+.login-page .login-container button:active {
+  transform: translateY(1px);
+}
+
+/* Icon above login form */
+.login-page .login-container .icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #0072ff;
+}
+
+/* Adjust text alignment */
+.login-page .login-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Link styles */
+.login-page .login-container p {
+  margin-top: 15px;
+  color: #666;
+}
+
+.login-page .login-container a {
+  color: #0072ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-page .login-container a:hover {
+  text-decoration: underline;
+}

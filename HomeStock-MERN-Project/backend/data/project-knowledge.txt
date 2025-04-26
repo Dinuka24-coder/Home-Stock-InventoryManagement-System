@@ -1,0 +1,26 @@
+Project Name: Smart Bill Manager
+
+Description:
+This is a MERN stack project that allows users to manage their bills.
+
+Core Features:
+- Add, update, delete, and view bills (CRUD)
+- Voice command support using Web Speech API
+- AI chatbot (powered by HuggingFace) for user queries
+
+Technologies Used:
+- MongoDB, Express.js, React.js, Node.js
+- Web Speech API for voice
+- HuggingFace/Mistral for chatbot
+
+Extra Info:
+- Built with a user-friendly interface
+- You can download or delete a bill using your voice
+- The chatbot is designed to help users understand features
+- This Project is built by Amarasekara D.H
+
+Voice Commands Supported:
+- "Download bill" → Downloads the currently selected bill
+- "Delete bill" → Deletes the currently selected bill
+- "Add bill" → Opens the form to add a new bill
+- "Update bill" → Opens the edit form

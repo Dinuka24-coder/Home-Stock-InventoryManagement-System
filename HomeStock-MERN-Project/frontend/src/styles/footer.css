@@ -1,0 +1,107 @@
+/* ../styles/footer.css */
+
+.footer {
+    background-color: #2c3e50; /* Dark blue background */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: auto; /* Ensures footer sticks to the bottom */
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 16px;
+    color: #ecf0f1; /* Light gray text */
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .footer-links li {
+    display: inline;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #1abc9c; /* Teal color on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+  }
+  
+  /* Social Media Icons Section */
+  .social-media {
+    margin-top: 30px;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    transform: scale(1.2); /* Enlarge icons on hover */
+  }
+  
+  .social-media img {
+    width: 32px; /* Icon size */
+    height: 32px;
+    filter: brightness(0) invert(1); /* Make icons white */
+    transition: filter 0.3s ease;
+  }
+  
+  .social-media img:hover {
+    filter: brightness(1) invert(0); /* Restore original icon colors on hover */
+  }
+  
+  /* Animation for the footer */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .footer {
+    animation: fadeInUp 1s ease-out; /* Fade-in animation */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .social-media a {
+      margin: 0 10px;
+    }
+  
+    .social-media img {
+      width: 28px;
+      height: 28px;
+    }
+  }
